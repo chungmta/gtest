@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "../../utils/style";
-import { extractNumber, clampValue, MIN_VALUE, PERCENTAGE_MAX } from "./valueUtils";
+import { extractNumber, clampValue } from "./valueUtils";
 import Tooltip from "../Tooltip";
+
+// Constants
+const PERCENTAGE_MAX = 100;
+const MIN_VALUE = 0;
 
 interface ValueStepperProps {
   value: number;
