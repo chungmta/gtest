@@ -8,7 +8,63 @@ exports[`toUpperCase 1`] = `
     <div
       class="w-96 bg-neutral-800 p-4 rounded-lg"
     >
-      // Your component go here
+      <div
+        class="flex flex-col gap-2 p-4 bg-[#151515] w-full font-inter"
+      >
+        <div
+          class="flex justify-between items-center "
+        >
+          <label
+            class="text-sm font-medium text-[#AAAAAA]"
+          >
+            Unit
+          </label>
+          <div
+            class="flex items-center gap-[2px] bg-[#212121] rounded-lg p-[2px]"
+          >
+            <button
+              class="w-[67px] h-[32px] text-sm border-none cursor-pointer rounded-l-md bg-[#424242] text-[#F9F9F9]"
+            >
+              %
+            </button>
+            <button
+              class="w-[67px] h-[32px] text-sm border-none bg-transparent text-[#AAAAAA] cursor-pointer rounded-r-md"
+            >
+              px
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center"
+        >
+          <label
+            class="text-sm font-medium text-[#AAAAAA]"
+          >
+            Value
+          </label>
+          <div
+            class="w-[140px] h-[36px] flex items-center rounded-lg overflow-hidden bg-[#212121]"
+          >
+            <button
+              aria-label="Decrease value"
+              class="w-[36px] min-w-[36px] h-[36px] flex justify-center items-center text-lg border-none bg-transparent text-[#F9F9F9] cursor-pointer disabled:text-[#AAA] disabled:hover:bg-transparent hover:bg-[#3b3b3b]"
+            >
+              −
+            </button>
+            <input
+              class="size-full text-center bg-transparent border-none text-[#F9F9F9] text-sm focus:outline-none"
+              role="spinbutton"
+              value="1"
+            />
+            <button
+              aria-label="Increase value"
+              class="w-[36px] min-w-[36px] h-[36px] flex justify-center items-center text-lg border-none bg-transparent text-[#F9F9F9] cursor-pointer disabled:text-[#AAA] disabled:hover:bg-transparent hover:bg-[#3b3b3b]"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
